@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Campervans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Available Campervans</h1>
+  </header>
+  <main>
+    <% if (vans.length > 0) { %>
+      <ul>
+        <% vans.forEach(van => { %>
+          <li>
+            <h2><%= van.name %></h2>
+            <p><%= van.description %></p>
+            <p>Places: <%= van.places %></p>
+            <p>Price: <%= van.price %> per day</p>
+          </li>
+        <% }) %>
+      </ul>
+    <% } else { %>
+      <p>No campervans available for the selected dates.</p>
+    <% } %>
+  </main>
+</body>
+</html>

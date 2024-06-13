@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(./assets/back.png);
+    background-position: 0px 0px;
+    /* background-attachment: fixed; */
+   
+    background-size: 100%;
+}
